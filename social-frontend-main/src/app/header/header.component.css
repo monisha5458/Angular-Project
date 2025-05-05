@@ -1,0 +1,50 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo-container {
+  flex: 0 0 auto;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+.logo-text-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-text {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  background-image: linear-gradient(45deg, #ff6a00, #ff8c00, #ffb300, #ffb600, #ff2e00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  animation: textAnimation 4s ease-in-out infinite;
+}
+
+/* Animation for color transition effect */
+@keyframes textAnimation {
+  0% {
+    background-image: linear-gradient(45deg, #00b3ff, #00d4ff, #00ffff, #0099ff, #0066ff);
+  }
+  50% {
+    background-image: linear-gradient(45deg, #00b3ff, #00d4ff, #00ffff, #0099ff, #0066ff);
+  }
+  100% {
+    background-image: linear-gradient(45deg, #00b3ff, #00d4ff, #00ffff, #0099ff, #0066ff);
+  }
+}
